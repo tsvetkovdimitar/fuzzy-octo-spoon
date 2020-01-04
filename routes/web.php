@@ -11,8 +11,29 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', function () {
+    
     return view('welcome');
+
+//    if(Auth::check()){
+//
+//        return "The user is logged in";
+//
+//    }
+
+//    $username = 'kim';
+//    $password = '123456Kim';
+//
+//    if(Auth::attempt(['username'=>$username, 'password'=>$password])){
+//
+//        return redirect()->intended('/admin');
+//
+//    }
+
+//Auth::logout();
+
 });
 
 Route::get('/test', function(){
